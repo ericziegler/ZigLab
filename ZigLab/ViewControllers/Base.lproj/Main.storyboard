@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="in9-M9-dWQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Circle Text Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CircleTextController" customModule="ZigLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="87"/>
+        </scene>
+        <!--Pulsing Controller-->
+        <scene sceneID="cBa-Rs-86i">
+            <objects>
+                <viewController id="qy8-cN-k04" customClass="PulsingController" customModule="ZigLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LXz-gE-LcC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yo5-My-FSc" customClass="RecordButton" customModule="ZigLab" customModuleProvider="target">
+                                <rect key="frame" x="177" y="787" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.46274509800000002" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2CG-Hr-e7j"/>
+                                    <constraint firstAttribute="height" constant="60" id="Hj2-yK-Aas"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="recordTapped:" destination="qy8-cN-k04" eventType="touchUpInside" id="Epa-Ex-d6r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxP-Be-4O2" customClass="ActionButton" customModule="ZigLab" customModuleProvider="target">
+                                <rect key="frame" x="57" y="144" width="300" height="50"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.51764705879999995" blue="0.3691941353" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="be7-W2-eKj"/>
+                                    <constraint firstAttribute="height" constant="50" id="vdu-s0-txK"/>
+                                </constraints>
+                                <state key="normal" title="Click Here"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mrk-OD-skA"/>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yo5-My-FSc" firstAttribute="centerX" secondItem="LXz-gE-LcC" secondAttribute="centerX" id="3As-4l-X8H"/>
+                            <constraint firstItem="Mrk-OD-skA" firstAttribute="bottom" secondItem="Yo5-My-FSc" secondAttribute="bottom" constant="15" id="6CN-jN-OJm"/>
+                            <constraint firstItem="QxP-Be-4O2" firstAttribute="top" secondItem="Mrk-OD-skA" secondAttribute="top" constant="100" id="FgT-NX-5KZ"/>
+                            <constraint firstItem="QxP-Be-4O2" firstAttribute="centerX" secondItem="LXz-gE-LcC" secondAttribute="centerX" id="ZYc-aX-kvS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recordButton" destination="Yo5-My-FSc" id="FdW-Ze-pUH"/>
+                        <outlet property="startButton" destination="QxP-Be-4O2" id="QDo-0c-aCw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPM-J5-O3X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547.82608695652175" y="85.714285714285708"/>
+        </scene>
+        <!--Touch Controller-->
+        <scene sceneID="Hvg-v7-q4g">
+            <objects>
+                <viewController id="in9-M9-dWQ" customClass="TouchController" customModule="ZigLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CzK-Gm-Fwo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rW5-cI-qtT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPh-FJ-M1y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1287" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
