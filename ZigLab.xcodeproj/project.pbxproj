@@ -98,7 +98,6 @@
 			children = (
 				788CC3DC25C6DD28003C8D96 /* AppDelegate */,
 				788CC3DE25C6DD70003C8D96 /* ViewControllers */,
-				788CC3E225C6DD96003C8D96 /* Data */,
 				788CC3E125C6DD93003C8D96 /* Views */,
 				788CC3E025C6DD90003C8D96 /* Extensions */,
 				788CC3DB25C6DD1D003C8D96 /* Resources */,
@@ -156,13 +155,6 @@
 				788CC3FC25C6DE7A003C8D96 /* CircularTextView */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		788CC3E225C6DD96003C8D96 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		788CC3E325C6DDAE003C8D96 /* BaseControllers */ = {
